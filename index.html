@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Presence Audit: Native Visions</title>
+    <title>Digital Growth Strategy: Native Visions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Brilliant Blues -->
     <!-- Application Structure Plan: The infographic is structured as a narrative journey to guide the user from problem to solution. It begins with a high-level summary (The Opportunity), diagnoses the core issues with data (Current Digital Footprint), presents a clear, step-by-step action plan (The Blueprint for Growth), and concludes by visualizing the positive outcomes (Projected Impact). This narrative structure was chosen over a simple report mirror because it's more persuasive and easier for a business owner to digest, turning abstract weaknesses into a clear, motivating story of potential transformation. -->
     <!-- Visualization & Content Choices: 
-        1. Digital Presence Score: Report Info (Executive summary stating underdeveloped presence) -> Goal (Inform) -> Viz/Presentation (Donut Chart) -> Justification (Instantly conveys the core problem as a simple, powerful percentage, showing a large 'untapped potential') -> Library/Method (Chart.js/Canvas).
+        1. Digital Presence Score: Report Info (Executive summary stating underdeveloped presence) -> Goal (Inform) -> Viz/Presentation (Don't Chart) -> Justification (Instantly conveys the core problem as a simple, powerful percentage, showing a large 'untapped potential') -> Library/Method (Chart.js/Canvas).
         2. Key Weaknesses: Report Info (Specific bullet points on Google & Social Media issues) -> Goal (Organize) -> Viz/Presentation (Styled HTML cards with Unicode icons) -> Justification (Clearly separates and lists qualitative findings in a scannable format without visual clutter) -> Library/Method (HTML/CSS).
         3. Action Plan Flowchart: Report Info (Numbered recommendations for Google & Social) -> Goal (Organize a process) -> Viz/Presentation (A two-path flowchart) -> Justification (Transforms a list of tasks into a clear, visual strategic plan, showing parallel paths to success, which is more intuitive than a list) -> Library/Method (HTML/CSS with Tailwind).
         4. Impact Comparison: Report Info (Implied benefits of fixing weaknesses) -> Goal (Compare) -> Viz/Presentation (Grouped Bar Chart) -> Justification (Provides a dramatic 'before and after' comparison, quantifying the abstract benefits of the action plan and creating a strong concluding argument for change) -> Library/Method (Chart.js/Canvas).
@@ -39,78 +39,66 @@
             height: 350px;
             max-height: 400px;
         }
-        .flowchart-step {
-            position: relative;
-            padding-left: 3rem;
-            padding-bottom: 2rem;
-            border-left: 2px solid #58508D;
-        }
-        .flowchart-step:last-child {
-            border-left: 2px solid transparent;
-            padding-bottom: 0;
-        }
-        .flowchart-step::before {
-            content: '';
-            position: absolute;
-            left: -0.7rem;
-            top: 0.15rem;
-            width: 1.25rem;
-            height: 1.25rem;
+        .icon-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
             border-radius: 9999px;
-            background-color: #58508D;
-            border: 4px solid #F8F9FA;
+            margin: 0 auto 1rem;
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 antialiased">
 
     <div class="container mx-auto p-4 sm:p-6 md:p-10">
 
-        <header class="text-center my-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-[#003F5C]">Digital Presence Audit</h1>
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#003F5C] tracking-tight">Your Digital Growth Strategy</h1>
             <p class="text-xl text-[#58508D] mt-2">Native Visions - Cerritos, CA</p>
             <p class="text-sm text-gray-500 mt-4">Prepared by: Scanista QR Solutions / Brittany Campa</p>
         </header>
 
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 my-8">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C]">The Opportunity</h2>
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 my-8 border border-gray-200">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C]">Connecting with Your Local Community</h2>
             <p class="text-center text-gray-600 mt-4 max-w-3xl mx-auto">
-                With a strong foundation across Shopify, Google, and Instagram, Native Visions is well-positioned. The key opportunity now lies in optimizing these channels for local engagement and creating a seamless connection between the national brand and the Cerritos community.
+                With a strong foundation across Shopify, Google, and Instagram, the key to unlocking new growth is local optimization. Industry data shows that **46% of all Google searches are for local information** <em class="text-xs text-gray-500">(Source: HubSpot)</em>, and a majority of those searchers visit a store within a day. This strategy outlines how to capture that local intent and drive more foot traffic to your Cerritos store.
             </p>
         </section>
 
         <section class="my-12">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Current Digital Footprint</h2>
-            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">An analysis of your current digital assets reveals a solid base, but key opportunities for local optimization and community engagement are being missed.</p>
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Your Current Digital Landscape</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">This analysis pinpoints the specific areas where strategic optimization will yield the highest return. Turning good assets into great ones is crucial, especially when **consumers are 2.7 times more likely to consider a business reputable** if they find a complete Google Business Profile <em class="text-xs text-gray-500">(Source: Google)</em>.</p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold text-center mb-4 text-[#58508D]">Digital Presence Score</h3>
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                    <h3 class="text-xl font-semibold text-center mb-4 text-[#58508D]">Digital Optimization Score</h3>
                     <div class="chart-container">
                         <canvas id="presenceChart"></canvas>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold text-center mb-6 text-[#58508D]">Key Areas for Optimization</h3>
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                    <h3 class="text-xl font-semibold text-center mb-6 text-[#58508D]">Your Key Growth Levers</h3>
                     <div class="space-y-5">
                         <div class="flex items-start">
-                            <span class="text-2xl mr-3 text-yellow-500">⚠️</span>
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 text-white flex items-center justify-center font-bold mr-3 mt-1">!</div>
                             <div>
                                 <h4 class="font-semibold">Under-Optimized Google Profile</h4>
-                                <p class="text-gray-600 text-sm">The profile lacks consistent updates, review engagement, and high-quality local photos, reducing its effectiveness in attracting nearby customers.</p>
+                                <p class="text-gray-600 text-sm">Your profile is active but missing consistent updates, review engagement, and local photos, leaving you invisible to many potential customers searching nearby.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <span class="text-2xl mr-3 text-yellow-500">⚠️</span>
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 text-white flex items-center justify-center font-bold mr-3 mt-1">!</div>
                             <div>
                                 <h4 class="font-semibold">Lack of Localized Instagram Content</h4>
-                                <p class="text-gray-600 text-sm">The existing account serves the national brand well but lacks content specifically for the Cerritos community, such as in-store events or local highlights.</p>
+                                <p class="text-gray-600 text-sm">Your national account is great for brand awareness, but it lacks a dedicated content stream for the Cerritos community, like in-store events or local highlights, to drive foot traffic.</p>
                             </div>
                         </div>
                          <div class="flex items-start">
-                            <span class="text-2xl mr-3 text-yellow-500">⚠️</span>
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 text-white flex items-center justify-center font-bold mr-3 mt-1">!</div>
                             <div>
-                                <h4 class="font-semibold">Brand Name Confusion</h4>
-                                <p class="text-gray-600 text-sm">A clear strategy is needed to differentiate the Cerritos location from other "Native Visions" businesses and connect it to the main brand account.</p>
+                                <h4 class="font-semibold">Brand Name Clarity</h4>
+                                <p class="text-gray-600 text-sm">A clear strategy is needed to differentiate the Cerritos location online, address confusion with their old mall address, and ensure local customers are connecting with the correct store.</p>
                             </div>
                         </div>
                     </div>
@@ -118,73 +106,88 @@
             </div>
         </section>
 
-        <section class="my-12 bg-white rounded-lg shadow-md p-6 md:p-8">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-6">Live Audit Findings</h2>
+        <section class="my-12 bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-6">Your Digital Assets: A Live Snapshot</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div>
                     <h3 class="text-xl font-semibold text-[#58508D]">Website</h3>
                     <p class="mt-2 text-gray-700">A professional and secure Shopify store is active at:</p>
                     <a href="https://shopnativevisions.com/" target="_blank" class="text-blue-600 hover:underline break-words">shopnativevisions.com</a>
-                    <span class="block mt-2 text-sm font-semibold text-green-600">✓ Strong Foundation</span>
+                    <span class="inline-block mt-2 text-sm font-semibold text-green-700 bg-green-100 px-3 py-1 rounded-full">✓ Strong Foundation</span>
                 </div>
                  <div>
                     <h3 class="text-xl font-semibold text-[#58508D]">Google Business Profile</h3>
                     <p class="mt-2 text-gray-700">A profile is present but needs optimization to improve local ranking.</p>
                      <a href="https://www.google.com/maps/search/?api=1&query=Native+Visions+Cerritos" target="_blank" class="text-blue-600 hover:underline">View on Google Maps</a>
-                    <span class="block mt-2 text-sm font-semibold text-yellow-600">⚠️ Needs Optimization</span>
+                    <span class="inline-block mt-2 text-sm font-semibold text-yellow-700 bg-yellow-100 px-3 py-1 rounded-full">⚠️ Needs Optimization</span>
                 </div>
                  <div>
                     <h3 class="text-xl font-semibold text-[#58508D]">Instagram Presence</h3>
                     <p class="mt-2 text-gray-700">A national brand account is active at:</p>
                     <a href="https://www.instagram.com/nativevisionsshop/" target="_blank" class="text-blue-600 hover:underline break-words">@nativevisionsshop</a>
-                    <span class="block mt-2 text-sm font-semibold text-yellow-600">⚠️ Needs Local Strategy</span>
+                    <span class="inline-block mt-2 text-sm font-semibold text-yellow-700 bg-yellow-100 px-3 py-1 rounded-full">⚠️ Needs Local Strategy</span>
                 </div>
             </div>
         </section>
 
         <section class="my-12">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">The Blueprint for Growth</h2>
-            <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">We'll execute a focused strategy to optimize your existing assets, creating a powerful local presence that leverages the strength of your national brand.</p>
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Your 3-Step Growth Blueprint</h2>
+            <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">We'll execute this focused strategy to optimize your existing assets, creating a powerful local presence that leverages the strength of your national brand.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <!-- Service 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="text-4xl mb-4 text-[#003F5C]">📈</div>
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="icon-circle bg-[#003F5C]">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
                     <h3 class="text-xl font-bold mb-2">Google Profile Optimization</h3>
-                    <p class="text-gray-600">We will transform your Google Business Profile into a customer magnet by managing reviews, posting regular local updates, and ensuring you stand out in Cerritos-area searches.</p>
+                    <p class="text-gray-600">We'll transform your Google Profile into a customer magnet with weekly "New Arrival" posts, active review management, and a gallery of high-quality local photos.</p>
                 </div>
-                <!-- Service 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="text-4xl mb-4 text-[#58508D]">📱</div>
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="icon-circle bg-[#58508D]">
+                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
                     <h3 class="text-xl font-bold mb-2">Local Instagram Strategy</h3>
-                    <p class="text-gray-600">We'll develop a content strategy for your existing Instagram that highlights the Cerritos store, featuring in-store exclusives, local events, and community stories to drive foot traffic.</p>
+                    <p class="text-gray-600">We'll craft content for your Instagram that speaks directly to Cerritos, featuring "In-Store Exclusives," community highlights, and "Meet the Artist" stories to drive local foot traffic.</p>
                 </div>
-                <!-- Service 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="text-4xl mb-4 text-[#BC5090]">🔗</div>
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="icon-circle bg-[#BC5090]">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        <svg class="w-8 h-8 text-white -ml-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M4 12L8 8m-4 4l4 4"></path></svg>
+                    </div>
                     <h3 class="text-xl font-bold mb-2">QR Code Integration</h3>
-                    <p class="text-gray-600">We'll connect your physical store to your digital world. In-store QR codes will drive customers to follow your Instagram, leave a Google review, and explore the rich stories behind your pieces online.</p>
+                    <p class="text-gray-600">We'll use QR codes in-store to seamlessly connect your physical and digital worlds, encouraging customers to leave Google reviews and follow you on Instagram with a simple scan.</p>
                 </div>
             </div>
         </section>
 
         <section class="my-12">
-            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Projected Impact</h2>
-            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Implementing these optimization strategies will lead to significant, measurable improvements in local discoverability and customer engagement.</p>
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="chart-container-bar">
-                    <canvas id="impactChart"></canvas>
+            <h2 class="text-3xl font-bold text-center text-[#003F5C] mb-2">Calculate Your Potential ROI</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">See the potential financial impact for yourself. Enter your estimated average sale value below to calculate the potential new monthly revenue based on our strategic growth projections.</p>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200 max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="text-center md:text-left">
+                        <label for="avgSale" class="block text-lg font-semibold text-gray-700">Your Average Sale Value:</label>
+                        <div class="mt-2 relative">
+                             <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">$</span>
+                             <input type="number" id="avgSale" class="w-full pl-7 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#58508D] focus:border-transparent" placeholder="e.g., 150">
+                        </div>
+                    </div>
+                    <div class="text-center bg-gray-50 rounded-lg p-4">
+                        <p class="text-lg font-semibold text-gray-700">Potential New Monthly Revenue:</p>
+                        <p id="roiResult" class="text-4xl font-extrabold text-green-600 mt-2">$0</p>
+                    </div>
                 </div>
+                <p class="text-xs text-gray-500 mt-4 text-center">Calculation is based on a conservative estimate of 8 new customers per month resulting from the proposed optimization strategy.</p>
             </div>
         </section>
 
-        <section class="my-12 text-center">
-            <h2 class="text-3xl font-bold text-[#003F5C]">Ready to Grow?</h2>
-            <p class="text-center text-gray-600 my-4 max-w-2xl mx-auto">This audit is the first step. Let's schedule a brief call to discuss this plan in detail and map out how we can achieve these results for Native Visions.</p>
+        <section class="my-12 text-center bg-gray-100 p-8 rounded-xl">
+            <h2 class="text-3xl font-bold text-[#003F5C]">Let's Build Your Local Legacy</h2>
+            <p class="text-gray-600 my-4 max-w-2xl mx-auto">This analysis is the first step. The next is to turn this strategy into reality. Let's schedule a brief call to discuss this plan and map out how we can achieve these results for Native Visions.</p>
             <div class="mt-6">
-                <a href="https://koalendar.com/e/step-2-7" target="_blank" class="bg-[#58508D] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#4a4379] transition-colors">
-                    Schedule a Consultation
+                <a href="https://koalendar.com/e/step-2-7" target="_blank" class="bg-[#58508D] text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[#4a4379] transition-transform duration-300 hover:scale-105 inline-block">
+                    Schedule Your Consultation
                 </a>
-                <p class="text-sm text-gray-500 mt-4">Brittany Campa | Scanista QR Solutions</p>
+                <p class="text-sm text-gray-500 mt-4">Brittany Campa | Scanista QR Solutions | (562) 305-5859</p>
             </div>
         </section>
 
@@ -250,50 +253,29 @@
                 }
             });
 
-            const impactCtx = document.getElementById('impactChart').getContext('2d');
-            new Chart(impactCtx, {
-                type: 'bar',
-                data: {
-                    labels: [wrapText('Local Discoverability'), wrapText('Customer Engagement'), wrapText('Brand Clarity')],
-                    datasets: [{
-                        label: 'Current State',
-                        data: [5, 5, 5],
-                        backgroundColor: '#FF6361',
-                    }, {
-                        label: 'Projected State',
-                        data: [9, 9, 8],
-                        backgroundColor: '#58508D',
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 10,
-                            title: {
-                                display: true,
-                                text: 'Score / 10'
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                        tooltip: {
-                            callbacks: {
-                                title: tooltipTitleCallback
-                            }
-                        }
-                    }
+            const avgSaleInput = document.getElementById('avgSale');
+            const roiResultEl = document.getElementById('roiResult');
+            const estimatedNewCustomers = 8;
+
+            avgSaleInput.addEventListener('input', () => {
+                const avgSale = parseFloat(avgSaleInput.value);
+                if (isNaN(avgSale) || avgSale <= 0) {
+                    roiResultEl.textContent = '$0';
+                    return;
                 }
+
+                const potentialRevenue = avgSale * estimatedNewCustomers;
+                
+                roiResultEl.textContent = potentialRevenue.toLocaleString('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
             });
         });
     </script>
 </body>
 </html>
-
 
 
